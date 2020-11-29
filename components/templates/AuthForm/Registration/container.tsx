@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import LoginForm from './LoginForm';
+import RegistrationForm from './RegistrationForm';
 
-import actions from '../../../redux/auth/actions';
+import actions from '../../../../redux/auth/actions';
 
 const mapStateToProps = (state: any) => ({
     errorMessage: state.auth.errorMessage
@@ -11,9 +11,9 @@ const mapStateToProps = (state: any) => ({
 
 const mapDispatchToProps = (dispatch: any) => (
     bindActionCreators({
-        loginUser: actions.loginUser,
+        createUser: actions.createUser,
         clearError: actions.clearUserError
     }, dispatch)
 );
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoginForm)
+export default connect(mapStateToProps, mapDispatchToProps)(RegistrationForm)

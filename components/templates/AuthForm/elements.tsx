@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import FormControlInput from "../Form/FormInput/FormControlInput";
-import Container from "../Container";
+import FormControlInput from "../../atoms/FormInput";
+import Container from "../../atoms/Container";
 
 const FormInput = styled(FormControlInput)``;
 

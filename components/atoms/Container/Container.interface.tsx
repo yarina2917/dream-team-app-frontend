@@ -1,4 +1,4 @@
-export interface ContainerInterface {
+export interface IContainer {
     className: string,
     as: asType,
     children: any,

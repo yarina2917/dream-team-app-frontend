@@ -5,10 +5,10 @@ import {
     InputLabel,
     InputContainer,
     ErrorMessage,
-} from '../elements'
-import {FormInputInterface} from "./FormInput.interface";
+} from './elements'
+import {IFormInput} from "./FormInput.interface";
 
-const FormControlInput = ({
+const Index = ({
       className,
       id = '',
       error,
@@ -20,7 +20,7 @@ const FormControlInput = ({
       readOnly,
       inputRef,
       handleChange
-}: FormInputInterface) => (
+}: IFormInput) => (
 
     <InputContainer
         className={className}
@@ -46,6 +46,6 @@ const FormControlInput = ({
 
         {error && <ErrorMessage>{error.message}</ErrorMessage>}
     </InputContainer>
-)
+);
 
-export default FormControlInput
+export default Index

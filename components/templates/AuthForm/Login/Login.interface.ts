@@ -1,4 +1,4 @@
-import { IUserLogin } from "../../../interfaces/user";
+import { IUserLogin } from "../../../../interfaces/user";
 
 export interface Props {
     errorMessage: string,

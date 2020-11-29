@@ -1,10 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-import Button from "../../Button";
-import { FormInput } from '../elements';
+import Button from "../../../atoms/Button";
+import { FormInput, AuthFormContainer } from '../elements';
 
 import { Props } from './Registration.interface';
+import Link from "next/link";
 
 const RegistrationForm: React.FC<Props> = ({ errorMessage, createUser, clearError }) => {
     const { register, handleSubmit, errors } = useForm();
@@ -14,7 +15,9 @@ const RegistrationForm: React.FC<Props> = ({ errorMessage, createUser, clearErro
     };
 
     return (
-        <>
+        <AuthFormContainer>
+            <h1>Registration</h1>
+
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <FormInput
@@ -104,7 +107,9 @@ const RegistrationForm: React.FC<Props> = ({ errorMessage, createUser, clearErro
             </form>
 
             {errorMessage && <p>{errorMessage}</p>}
-        </>
+
+            <Link href={'/login'}><a>Go to login</a></Link>
+        </AuthFormContainer>
     )
 };
 

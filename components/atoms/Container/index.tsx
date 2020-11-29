@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {Container as ContainerElement} from './elements'
-import {ContainerInterface} from "./Container.interface";
+import {IContainer} from "./Container.interface";
 
 const Container = ({
        as = 'div',
@@ -16,7 +16,7 @@ const Container = ({
        handleClick,
        rootRef,
        ...props
-   }: ContainerInterface) => (
+   }: IContainer) => (
     <ContainerElement
         className={className}
         as={as}

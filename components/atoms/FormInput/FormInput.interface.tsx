@@ -1,4 +1,4 @@
-export interface FormInputInterface {
+export interface IFormInput {
     className?: string,
     name?: string,
     id?: string,

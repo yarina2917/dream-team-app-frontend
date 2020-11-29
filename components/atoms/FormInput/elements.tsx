@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 
-import { colors } from '../../constants';
+import { colors } from '../../../constants';
 import Container from "../Container";
 
-// Input
 const InputContainer = styled(Container)`
   width: 300px;
   margin-bottom: 30px;
