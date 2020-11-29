@@ -8,7 +8,7 @@ import {
 } from './elements'
 import {IFormInput} from "./FormInput.interface";
 
-const Index = ({
+const FormControlInput = ({
       className,
       id = '',
       error,
@@ -48,4 +48,4 @@ const Index = ({
     </InputContainer>
 );
 
-export default Index
+export default FormControlInput
